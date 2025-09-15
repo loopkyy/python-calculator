@@ -3,3 +3,4 @@ b = int(input("Masukkan angka kedua: "))
 
 print("Hasil penjumlahan:", a + b)
 print("Hasil pengurangan:", a - b)
+print("Hasil perkalian:", a * b)
