@@ -1,11 +1,20 @@
-# calculator.py
-expr = input("Masukkan operasi (contoh: 12 + 5): ")
+print("Kalkulator Sederhana")
+print("Gunakan format: <angka> <operator> <angka>")
+print("Operator: +  -  *  /  ^  %")
+print("Ketik 'exit' untuk keluar.\n")
 
-# pecah input jadi angka dan operator
-parts = expr.split()
-if len(parts) != 3:
-    print("Format salah! gunakan contoh: 12 + 5")
-else:
+while True:
+    expr = input("> ")
+
+    if expr.lower() == "exit":
+        print("Keluar dari kalkulator.")
+        break
+
+    parts = expr.split()
+    if len(parts) != 3:
+        print("Format salah! Contoh: 12 + 5")
+        continue
+
     a, op, b = parts
     a = float(a)
     b = float(b)
